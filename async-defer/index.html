@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>async/defer</title>
+</head>
+<body>
+    <p>Считаем учеников!</p>
+    <script>
+        alert("Первый ученик");
+        alert("Второй ученик");
+        alert("Третий ученик");
+    </script>
+    <p>Конец счета.</p>
+
+    <p>То есть, в таком коде (с async) первым сработает тот скрипт, который раньше загрузится:
+            <script src="1.js" async></script>
+            <script src="2.js" async></script>
+            А в таком коде (с defer) первым сработает всегда 1.js, а скрипт 2.js, даже если загрузился раньше, будет его ждать.
+            
+            <script src="1.js" defer></script>
+            <script src="2.js" defer></script>
+            Поэтому атрибут defer используют в тех случаях, когда второй скрипт 2.js зависит от первого 1.js, к примеру – использует что-то, описанное первым скриптом.
+        </p>
+</body>
+</html>
