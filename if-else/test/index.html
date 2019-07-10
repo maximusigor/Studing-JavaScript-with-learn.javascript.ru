@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test-if-else</title>
+</head>
+<body>
+	<script>
+
+		/*1) Первое задание 
+
+		var answer = prompt('Каково «официальное» название JavaScript?', '');
+
+		if (answer == 'ECMAScript') {
+			alert('Верно!');
+		}else {
+			alert('Не знаете? «ECMAScript»!');
+		}*/
+
+		 /*2) Второе задание
+		
+		var number = prompt('Введите число:', '');
+
+		if (number > 0 ) {
+			alert(1);
+		} else if (number < 0){
+			alert(-1);
+		}else if (number == 0) {
+			alert(0);
+		}*/
+
+		/*3) Третье задание
+		var userName = prompt('Введите Ваш логин', '');
+
+		if(userName == 'Админ') {
+			alert('Какой у вас пароль?');
+
+			var pass = prompt('Пароль?', '');
+
+			  if (pass == 'Чёрный Властелин') {
+			    alert( 'Добро пожаловать!' );
+
+			  } else if (pass == null) { 
+			    alert( 'Вход отменён' );
+
+			  } else {
+			    alert( 'Пароль неверен' );
+			  }
+
+		}else if (userName == null) {
+			alert('Вход отменён');
+
+		}else {
+			alert('Я вас не знаю');
+		}*/
+
+		// 4) Четвертое задание 
+		// 	Перепишите if с использованием оператора '?':
+		var result;
+
+		if (a + b < 4) {
+		  result = 'Мало';
+		} else {
+		  result = 'Много';
+		}
+
+		result = (a + b < 4) ? 'Мало' : 'Много';
+
+		var message;
+
+			if (login == 'Вася') {
+			  message = 'Привет';
+			} else if (login == 'Директор') {
+			  message = 'Здравствуйте';
+			} else if (login == '') {
+			  message = 'Нет логина';
+			} else {
+			  message = '';
+			}
+
+		message = (login == 'Вася') ? 'Привет':
+				  (login == 'Директор') ? 'Здравствуйте':
+				  (login == '') ? 'Нет логина':
+				  '';
+
+	</script>
+</body>
+</html>

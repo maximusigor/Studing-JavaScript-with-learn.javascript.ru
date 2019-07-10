@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>If_else</title>
+</head>
+<body>
+	<script>
+		/*var year = prompt("В каком году создали ES5 ?", '')
+		if (year != 2011){
+			alert('Ответ не верный!');
+		} else if (year == 2011){
+			alert('Вы угадали!');
+		}*/
+
+		// Также в параметры if можно передать переменные
+
+		/*var year = prompt("В каком году создали ES5 ?", '');
+		var cond = (year != 2011);
+		if (cond) {
+			alert('Вы не угадали!');
+		}*/
+
+		// Множество условий можно создать с помошью тернарного оператора ?
+
+		var age = prompt('возраст?', 18);
+
+		var message = (age < 3) ? 'Здравствуй, малыш!' :
+		  (age < 18) ? 'Привет!' :
+		  (age < 100) ? 'Здравствуйте!' :
+		  (age > 200) ? 'Ого-го-го !' :
+		  'Какой необычный возраст!';
+
+		alert( message );
+	</script>
+</body>
+</html>
