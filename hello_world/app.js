@@ -58,11 +58,15 @@
 
 // 4 Data types
 
-let name = 'Ihor';
-let age = 31;
-let isProgrammer = true;
-let x
-console.log(typeof name);
-console.log(typeof age);
-console.log(typeof isProgrammer);
-console.log(typeof x);
+// let name = 'Ihor';
+// let age = 31;
+// let isProgrammer = true;
+// let x
+// console.log(typeof name);
+// console.log(typeof age);
+// console.log(typeof isProgrammer);
+// console.log(typeof x);
+// console.log(typeof null);
+
+
+// Priority of operators
