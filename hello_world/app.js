@@ -102,10 +102,55 @@ const currentYear = 2022;
 // }
 
 //let isReady = true;
-let isReady = false;
+//let isReady = false;
 
-if (isReady) {
-    console.log('Good');
-} else {
-    console.log ('Bad')
+// if (isReady) {
+//     console.log('Good');
+// } else {
+//     console.log ('Bad');
+// }
+
+// Ternary expression
+//isReady ? console.log('Good') : console.log ('Bad');
+
+// 7 Boolean logic
+
+// let a1 =  true && true;     // t && t return true
+// let a2 =  true && false;    // t && f return false
+// let a3 = false && true;     // f && t return false
+// let a4 = false && (3 == 4); // f && f return false
+// let a5 = "Cat" && "Dog";    // t && t return Dog
+// let a6 = false && "Cat";    // f && t return false
+// let a7 = "Cat" && false;    // t && f return false
+
+// let o1 =  true || true;     // t || t return true
+// let o2 = false || true;     // f || t return true
+// let o3 =  true || false;    // t || f return true
+// let o4 = false || (3 == 4); // f || f return false
+// let o5 = "Cat" || "Dog";    // t || t return Cat
+// let o6 = false || "Cat";    // f || t return Cat
+// let o7 = "Cat" || false;    // t || f return Cat
+
+
+// 8 Function
+
+function calculateYear(year){
+    return 2022 - year;
 }
+
+// console.log(calculateYear(1990));
+// console.log(calculateYear(1996));
+// console.log(calculateYear(1999));
+
+function logInfoAbout (name, year){
+    let age = calculateYear(year);
+    if (age > 0){
+        console.log('Man name ' + name + ' have age ' + age);
+    } else {
+        console.log('Its future');
+    }
+
+}
+
+logInfoAbout('Ihor', 1990);
+logInfoAbout('Ihor', 2023);
