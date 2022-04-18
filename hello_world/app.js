@@ -101,8 +101,11 @@ const currentYear = 2022;
 //     console.log('false');
 // }
 
-let isReady = true;
+//let isReady = true;
+let isReady = false;
 
-if (isReady === true) {
+if (isReady) {
     console.log('Good');
+} else {
+    console.log ('Bad')
 }
