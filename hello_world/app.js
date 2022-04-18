@@ -69,4 +69,40 @@
 // console.log(typeof null);
 
 
-// Priority of operators
+// 5 Priority of operators
+
+
+const fullAge = 31;
+const birthYear = 1990;
+const currentYear = 2022;
+
+// + - = >= <=
+// let isFullAge = currentYear - birthYear >= fullAge;
+// console.log(isFullAge);
+
+// 6 Сonditional operators
+
+//let courseStatus = 'pendin'; // ready, pending, fail
+
+//if (courseStatus === 'ready') {
+// console.log('The course is ready and can be taken ');
+//} else if (courseStatus === 'pending') {
+//    console.log('The course is under development');
+//} else {
+//    console.log('The course failed');
+//}
+
+// let num1 = 42;
+// let num2 = '42';
+//
+// if (num1 == num2) {
+//     console.log('true');
+// } else if (num1 === num2) {
+//     console.log('false');
+// }
+
+let isReady = true;
+
+if (isReady === true) {
+    console.log('Good');
+}
