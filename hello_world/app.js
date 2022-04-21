@@ -175,4 +175,14 @@ const currentYear = 2022;
 
 // 10 Cycles
 
-let cars = ['Mazda', 'Mercedes', 'Ford'];
+//let cars = ['Mazda', 'Mercedes', 'Ford', 'Porsche'];
+
+// for (let i = 0; i < cars.length; i++ ) {
+//     console.log(cars[i]);
+// }
+
+// for( let car of cars ) {
+//     console.log(car);
+// }
+
+// Object
