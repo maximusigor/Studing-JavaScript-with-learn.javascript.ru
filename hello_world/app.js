@@ -134,23 +134,45 @@ const currentYear = 2022;
 
 // 8 Function
 
-function calculateYear(year){
-    return 2022 - year;
-}
+// function calculateYear(year){
+//     return 2022 - year;
+// }
 
 // console.log(calculateYear(1990));
 // console.log(calculateYear(1996));
 // console.log(calculateYear(1999));
 
-function logInfoAbout (name, year){
-    let age = calculateYear(year);
-    if (age > 0){
-        console.log('Man name ' + name + ' have age ' + age);
-    } else {
-        console.log('Its future');
-    }
+// function logInfoAbout (name, year){
+//     let age = calculateYear(year);
+//     if (age > 0){
+//         console.log('Man name ' + name + ' have age ' + age);
+//     } else {
+//         console.log('Its future');
+//     }
 
-}
+// }
+//
+// logInfoAbout('Ihor', 1990);
+// logInfoAbout('Ihor', 2023);
 
-logInfoAbout('Ihor', 1990);
-logInfoAbout('Ihor', 2023);
+// 9 Arrays
+
+//let cars = ['Mazda', 'Mercedes', 'Ford'];
+// console.log(cars);
+
+//let cars = new Array('Mazda', 'Mercedes', 'Ford');
+//console.log(cars);
+// console.log(cars[0]);
+// console.log(cars[1]);
+// console.log(cars[2]);
+// console.log(cars[3]);
+// console.log(cars.length);
+//
+// cars[0] = 'Porsche';
+// console.log(cars);
+// cars[5] = 'Ferrari';
+// console.log(cars);
+
+// 10 Cycles
+
+let cars = ['Mazda', 'Mercedes', 'Ford'];
