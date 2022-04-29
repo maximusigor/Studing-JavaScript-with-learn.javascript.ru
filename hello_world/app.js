@@ -176,3 +176,4 @@ const currentYear = 2022;
 // 10 Cycles
 
 let cars = ['Mazda', 'Mercedes', 'Ford'];
+
