@@ -27,3 +27,23 @@
 // console.log(string.trim());
 // console.log(string.trimEnd());
 // console.log(string.trimStart());
+
+function logPerson(s, name, age) {
+
+    if (age < 0) {
+        age = 'Еще не родился!';
+    }
+    return `${s[0]}${name}${s[1]}${age}${s[2]}`;
+}
+
+const personName = 'Ihor';
+const personName1 = 'Ivan';
+const personAge = 32;
+const personAge1 = -10;
+
+const output = logPerson`Имя: ${personName}, Возраст: ${personAge}!`;
+const output1 = logPerson`Имя: ${personName1}, Возраст: ${personAge1}!`;
+
+console.log(output);
+console.log(output1);
+
