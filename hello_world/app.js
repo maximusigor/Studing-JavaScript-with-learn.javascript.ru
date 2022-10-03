@@ -47,3 +47,4 @@ const output1 = logPerson`Имя: ${personName1}, Возраст: ${personAge1}!
 console.log(output);
 console.log(output1);
 
+
