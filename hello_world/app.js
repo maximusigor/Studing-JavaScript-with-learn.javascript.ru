@@ -3,4 +3,4 @@
 function greet(name) {
     console.log('Привет - ', name, '!');
 }
-greet('Magda');
+greet('Magdalena');
