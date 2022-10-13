@@ -1,79 +1,46 @@
-// 1 Functions
+//Arrays
 
-//Function Declaration
-function greet(name) {
-    console.log('Привет - ', name, '!');
+const cars = ['Mazda', 'Ford', 'BMW', 'Mercedes'];
+const fib = [1, 1, 2, 3, 5, 8, 13, 21];
+
+console.log(cars);
+
+//Function
+function addItemToEnd() {
+
 }
+//Method
+cars.push('Porshe'); // add new item to end array;
+console.log(cars);
 
-//Function Expression
-const greet2 = function greet2(name) {
-    console.log('Привет 2 - ', name, '!');
-}
+cars.unshift('Skoda'); //add new item to start array;
+console.log(cars);
 
-greet('Magdalena');
-greet2('Magdalena');
+// cars.shift(); // delete first item of array and return.
+// console.log(cars);
+//
+// const firstItem = cars.shift();
+// console.log(firstItem);
+//
+// cars.pop();// delete last item of array and return.
+// console.log(cars);
+//
+// const lasttItem = cars.pop();
+// console.log(lasttItem);
 
-console.log(typeof greet);
-console.dir(greet);
+cars.reverse(); //reverse array.
+console.log(cars);
 
-// 2 Anonimous functions
-// let counter = 0;
-// const interval = setInterval(function() {
-//     if (counter === 5){
-//         clearInterval(interval);
-//     }else {
-//         console.log(++counter);
-//     }
-// }, 1000);
+// Task 1
+// const text = 'Hello, we study JavaScript';
+// const reverseText = text.split('').reverse().join('');
+// console.log(reverseText);
 
-// 3 Arrow functions
-// function greet(name) {
-//     console.log('Привет - ', name, '!');
-// }
+// Task 2
 
-const arrow = (name) => {
-    console.log('Привет - ', name, '!')
-}
-arrow('Ihor');
+const index = cars.indexOf('BMW');
 
-const arrow2 = name => console.log('Привет - ', name, '!');
+console.log(cars[index]);
 
-arrow2('Vlad');
-
-// const pow2 = num => {
-//     return num ** 2
-// }
-
-const pow2 = num => num ** 2;
-
-console.log(pow2(5));
-
-// 4 Default parameters
-
-const sum = (a= 40, b = a * 2) => a + b;
-
-console.log(sum(4,5));
-console.log(sum());
-
-function sumAll(...all) {
-    let result = 0;
-    for (let num of all) {
-        result += num
-    }
-    return result;
-}
-
-const res = sumAll(1, 2, 3, 4, 5, 6, 7, 8, 9);
-console.log(res);
-
-//Closures
-function createMember(name) {
-    return function(lastName) {
-        console.log(name + lastName);
-    }
-}
-
-const logWithLastName = createMember('Ihor');
-console.log(logWithLastName());
-console.log(logWithLastName('Shylov'));
-console.log(logWithLastName('Ivanov'));
+cars[index] = 'Reno';
+console.log(cars);
