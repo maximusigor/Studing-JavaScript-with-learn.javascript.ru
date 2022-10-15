@@ -2,6 +2,11 @@
 
 const cars = ['Mazda', 'Ford', 'BMW', 'Mercedes'];
 const fib = [1, 1, 2, 3, 5, 8, 13, 21];
+const people = [
+    {name: 'Ihor', budget: 4200},
+    {name: 'Ivan', budget: 3500},
+    {name: 'Victoria', budget: 1700}
+]
 
 console.log(cars);
 
@@ -28,19 +33,24 @@ console.log(cars);
 // const lasttItem = cars.pop();
 // console.log(lasttItem);
 
-cars.reverse(); //reverse array.
-console.log(cars);
+// cars.reverse(); //reverse array.
+// console.log(cars);
 
 // Task 1
 // const text = 'Hello, we study JavaScript';
 // const reverseText = text.split('').reverse().join('');
 // console.log(reverseText);
 
+// console.log(cars[index]);
+//
+// cars[index] = 'Reno';
+// console.log(cars);
+
 // Task 2
 
 const index = cars.indexOf('BMW');
+const indexPeople = people.findIndex(function (person) {
+    return person.budget === 3500;
+})
+console.log(people[1]);
 
-console.log(cars[index]);
-
-cars[index] = 'Reno';
-console.log(cars);
