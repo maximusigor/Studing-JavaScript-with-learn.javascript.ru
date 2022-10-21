@@ -47,10 +47,27 @@ console.log(cars);
 // console.log(cars);
 
 // Task 2
+let findPerson;
+for (const person of people) {
+    if (person.budget === 350) {
+        findPerson = person;
+    }
+}
+console.log(findPerson);
+
+const person = people.find(person => person.budget === 3500);
+console.log(person);
 
 const index = cars.indexOf('BMW');
 const indexPeople = people.findIndex(function (person) {
     return person.budget === 3500;
 })
-console.log(people[1]);
+// const person = people.find(function (person) {
+//     return person.budget === 3500;
+// })
+// console.log(people[1]);
+// console.log(person);
+
+console.log(cars.includes('Mazda'));
+
 
